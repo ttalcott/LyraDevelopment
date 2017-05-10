@@ -1,0 +1,320 @@
+html {
+	position: flex;
+	margin: 0;
+	padding: 0;
+	font-family: 'Poiret One', cursive;
+}
+
+body {
+	width: 100%;
+	font-family: 'Poiret One', cursive;
+}
+
+	#about-black {
+		background-color: rgba(14, 17, 17, 0.8);
+	}
+
+
+	.about-background {
+		display: flex;
+		min-height: 95vh;
+		background: url("../images/custom-about2.svg") no-repeat center;
+		background-size: cover;
+		align-items: center;
+	}
+
+/*********************************
+construction page styles
+**********************************/
+
+.construction {
+    background: black;
+    background-size: cover;
+    height: 100vh;
+		position: fixed;
+		width: 100%;
+}
+
+.construction-section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 90vh;
+}
+
+.large-logo {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+/**********************************
+global styles
+**********************************/
+a {
+	color: rgba(250, 175, 58, 1.0);
+}
+
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+h1 {
+	margin: 0;
+}
+
+.white {
+	color: white;
+	background-color: rgba(14, 17, 17, 0.7);
+}
+
+.fadeIn{
+	animation-delay: 1s;
+	animation-timing-function: ease-in;
+}
+.row {
+	margin-top: 5rem;
+}
+
+.jumbotron {
+	background: transparent;
+	margin: 0;
+}
+/*
+.black-background {
+	background-color: black;
+	color: white;
+}*/
+
+.about-section-1 {
+	font-size: 20px;
+	font-weight: bold;
+}
+/**********************************
+button styles
+**********************************/
+
+.btn-info {
+	background-color: rgba(250, 175, 58, 1.0) !important;
+	margin-right: 4px;
+	border: none;
+	color: black;
+}
+
+.btn-default {
+	background-color: black !important;
+	border: none;
+	color: white;
+}
+
+.btn-default:hover {
+	color: rgba(250, 175, 58, 1.0);
+}
+
+.fa-send:before, .fa-paper-plane:before {
+	padding: 3px;
+}
+
+.fa-minus-circle:before {
+	padding: 3px;
+}
+
+/**********************************
+navbar styles
+**********************************/
+
+.navbar-default {
+	margin-bottom: 5rem;
+	padding: 0 3rem 0 3rem;
+	background: black;
+	border-radius: 0;
+	border: none;
+	height: auto;
+	line-height: 5rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+.navbar-toggle {
+	margin: 20px 10px 20px 0;
+	padding: 10px;
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+	background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+	transition: ease 0.2s;
+}
+.navbar-toggle .top-bar {
+	transform: rotate(45deg);
+	transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+	opacity: 0;
+}
+.navbar-toggle .bottom-bar {
+	transform: rotate(-45deg);
+	transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+	transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+	opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+	transform: rotate(0);
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white;
+	font-size: large;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: rgba(250, 175, 76, 1.0);
+}
+
+@media only screen and (min-width: 768px) {
+	.navbar-default .navbar-nav>li>a:after {
+		content: '';
+		display: block;
+		margin: auto;
+		height: 2px;
+		width: 0px;
+		background: transparent;
+		transition: width .5s ease, background-color .5s ease;
+	}
+
+	.navbar-default .navbar-nav>li>a:hover:after {
+		width: 100%;
+		background: white;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		padding-top: 3rem;
+	}
+
+}
+
+.logo-small {
+	height: 80px;
+}
+
+/**********************************
+home specific styles
+**********************************/
+
+.star-background {
+  height: 90vh;
+  background: black;
+}
+
+
+.catchy {
+	margin: 15rem 0 0 0;
+	color: white;
+}
+
+@media only screen and (max-width: 768px) {
+	.catchy {
+		margin: 0;
+		padding: 0;
+		color: white;
+	}
+}
+
+.home-gold {
+	color: rgba(250, 175, 58, 1.0);
+	font-size: 70px;
+	font-weight: bold;
+}
+
+.catchy .welcome-text {
+	font-size: 65px;
+}
+
+.intro-text {
+	margin: 13rem 0 0 0;
+	color: white;
+	font-size: 35px;
+}
+
+/**********************************
+google recaptcha
+**********************************/
+
+.g-recaptcha {
+	margin: 2rem 0;
+}
+
+
+/**********************************
+footer styles
+**********************************/
+.footer {
+	padding: 3rem;
+	background-color: black;
+}
+
+.footer-content-1 {
+	font-size: large;
+	text-align: center;
+}
+
+.footer-content-2 {
+	font-size: large;
+	text-align: center;
+}
+
+.info {
+	color: white;
+}
+
+.gold {
+	color: rgba(250, 175, 58, 1.0);
+}
+
+.lineRight {
+	border-right: 2px solid gray;
+	text-align: center;
+	padding: 0;
+}
+
+.sfooter {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.sfooter-content {
+	flex: 1 0 auto;
+}
+
+/**********************************
+home background style
+**********************************/
+.home {
+	/*background: url("../images/customBackground4.svg");
+	background-attachment: fixed;
+	background-size: cover;*/
+	/*background-color: rgba(14, 17, 17, 1.0);*/
+	background: -webkit-gradient(linear, 100% 50%, 25% 0%, from(rgba(33, 33, 33, 1.0)), to(#000000));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #000000, rgba(33, 33, 33, 1.0));
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #000000, rgba(33, 33, 33, 1.0);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #000000, rgba(33, 33, 33, 1.0);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #000000, rgba(33, 33, 33, 1.0);
+
+	background-size: cover;
+}
