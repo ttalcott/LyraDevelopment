@@ -266,7 +266,7 @@ home specific styles
 }
 
 .splash {
-	background: url("../images/purple-background.svg") no-repeat center center fixed;
+	background: url("../images/night-sky.svg") no-repeat center center fixed;
 	background-size: cover;
 	height: 100vh;
 }
