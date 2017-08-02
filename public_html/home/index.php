@@ -18,7 +18,7 @@ require_once(dirname(__DIR__) . "/php/partials/head-utils.php");
 				<div class="row">
 					<div class="home-title">
 						<h1 class="center large-white poppins animated fadeIn">Lyra Development</h1>
-						<h2 class="center raleway sub-title animated fadeIn delay">Custom Software | Your potential is our passion.</h2>
+						<h2 class="center raleway sub-title animated fadeIn delay">Custom software solutions to drive your business.</h2>
 					</div>
 				</div>
 			</div>

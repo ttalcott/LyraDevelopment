@@ -176,7 +176,7 @@ navbar styles
 	border: none;
 	height: auto;
 	line-height: 5rem;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Poppins', sans-serif;
   /*box-shadow: 0 0 10px rgba(0,0,0,0.6);*/
 }
 
@@ -214,7 +214,7 @@ navbar styles
 }
 
 .navbar-default .navbar-nav>li>a {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 	color: white;
 	font-size: xx-large;
 }
@@ -267,7 +267,7 @@ home specific styles
 }
 
 .splash {
-	background: url("../images/night-sky.svg") no-repeat center center fixed;
+	background: url("../images/splash-background.svg") no-repeat center center fixed;
 	background-size: cover;
 	height: 100vh;
 }
