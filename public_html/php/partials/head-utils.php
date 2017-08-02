@@ -23,7 +23,7 @@ $PREFIX = str_repeat("../", $DEPTH_DIFFERENCE);
 		<meta name="google-site-verification" content="V8iSDHljV0tj8KSoBPef4OErw60IOb6TefArg7vkP8E" />
 
 		<!-- Latest compiled and minified CSS -->
-		<link rel="icon" type="image/xicon" href="<?php echo $PREFIX; ?>images/new-favicon.png">
+		<link rel="icon" type="image/xicon" href="<?php echo $PREFIX; ?>images/lyra-favicon.png">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 		<!-- FontAwesome -->
