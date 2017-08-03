@@ -98,6 +98,12 @@ h1 {
 	font-size: 52px;
 }
 
+@media only screen and (max-width: 768px) {
+	.sub-title {
+		font-size: 20px;
+	}
+}
+
 .fadeInLeft {
 	animation-duration: 1s;
 	animation-timing-function: ease-in;
@@ -269,7 +275,7 @@ home specific styles
 .splash {
 	background: url("../images/splash-background.svg") no-repeat center center fixed;
 	background-size: cover;
-	height: 100vh;
+	height: 95vh;
 }
 
 .rubik {
@@ -288,6 +294,13 @@ home specific styles
 .large-white {
 	color: white;
 	font-size: 72px;
+}
+
+@media only screen and (max-width: 768px) {
+	.large-white {
+		color: white;
+		font-size: 40px;
+	}
 }
 
 
