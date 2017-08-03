@@ -1,4 +1,4 @@
-<header class="animated fadeInDown fade-delay-long raleway">
+<header class="">
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
