@@ -24,7 +24,7 @@ require_once(dirname(__DIR__) . "/php/partials/head-utils.php");
 			</div>
 			<div class="container-fluid center">
 				<div class="row">
-					<a class="btn btn-primary dark-button animated fadeIn delay" href="/contact/" role="button">Contact Us</a>
+					<a class="clear-button animated fadeIn delay" href="/contact/" role="button">Contact Us</a>
 				</div>
 			</div>
 		</div>

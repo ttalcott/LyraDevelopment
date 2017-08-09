@@ -11,19 +11,6 @@ body {
 	padding: 0 !important;
 }
 
-	#about-black {
-		background-color: rgba(14, 17, 17, 0.8);
-	}
-
-
-	.about-background {
-		display: flex;
-		min-height: 95vh;
-		background: url("../images/custom-about2.svg") no-repeat center;
-		background-size: cover;
-		align-items: center;
-	}
-
 /*********************************
 construction page styles
 **********************************/
@@ -85,14 +72,6 @@ h1 {
 	font-weight: bold;
 }
 
-.playfair-display {
-	font-family: 'Playfair Display', serif;
-}
-
-.raleway {
-	font-family: 'Raleway' sans-serif;
-}
-
 .sub-title {
 	color: white;
 	font-size: 52px;
@@ -100,7 +79,7 @@ h1 {
 
 @media only screen and (max-width: 768px) {
 	.sub-title {
-		font-size: 20px;
+		font-size: 30px;
 	}
 }
 
@@ -145,6 +124,15 @@ button styles
 	background: rgba(0, 0, 0, .7);
 	color: rgba(251, 160, 52, 1.0);
 	font-sixe: 50px;
+}
+
+.clear-button {
+	background: none;
+	border: 3px solid white;
+	padding: 20px 30px;
+	font-size: 20px;
+	color: white;
+	margin: 10px 0;
 }
 
 .btn-default:hover {
@@ -275,7 +263,7 @@ home specific styles
 .splash {
 	background: url("../images/splash-background.svg") no-repeat center center fixed;
 	background-size: cover;
-	height: 95vh;
+	min-height: 95vh;
 }
 
 .rubik {
@@ -299,7 +287,7 @@ home specific styles
 @media only screen and (max-width: 768px) {
 	.large-white {
 		color: white;
-		font-size: 40px;
+		font-size: 50px;
 	}
 }
 
@@ -335,6 +323,12 @@ home specific styles
 
 .home-title {
 	padding-top: 190px;
+}
+
+@media only screen and (max-width: 768px) {
+	.home-title {
+		padding-top: 100px;
+	}
 }
 
 /**********************************
