@@ -74,7 +74,7 @@ h1 {
 
 .sub-title {
 	color: white;
-	font-size: 52px;
+	font-size: 40px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -103,6 +103,10 @@ h1 {
 .fade-delay-long {
 	animation-delay: 3s;
 }
+
+.no-top-margin {
+	margin-top: 0;
+}
 /**********************************
 button styles
 **********************************/
@@ -129,10 +133,35 @@ button styles
 .clear-button {
 	background: none;
 	border: 3px solid white;
-	padding: 20px 30px;
+	padding: 10px 30px;
 	font-size: 20px;
 	color: white;
 	margin: 10px 0;
+	display: inline-block;
+	position: relative;
+	transition:color 0.5s ease;
+	text-transform: uppercase;
+}
+
+.clear-button:hover {
+  color:black;
+}
+
+.clear-button:after {
+  position: absolute;
+  content: '';
+  top:0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: white;
+  transform-origin:left;
+  transition:width 0.5s ease;
+  z-index:-1;
+}
+
+.clear-button:hover:after {
+  width: 100%;
 }
 
 .btn-default:hover {
@@ -210,7 +239,7 @@ navbar styles
 .navbar-default .navbar-nav>li>a {
 	font-family: 'Nunito Sans', sans-serif;
 	color: white;
-	font-size: xx-large;
+	font-size: 20px;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -247,6 +276,19 @@ navbar styles
 	height: 70px;
 	margin: 10px 0 10px 20px;
 }
+
+@media only screen and (max-width: 768px)
+{
+	.navbar-collapse {
+		background: white;
+		width: 100%;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		color: black;
+	}
+}
+
 
 /**********************************
 home specific styles
@@ -329,6 +371,11 @@ home specific styles
 	.home-title {
 		padding-top: 100px;
 	}
+}
+
+.blue-background {
+	background-color: rgb(48, 99, 142);
+	min-height: 30vh;
 }
 
 /**********************************

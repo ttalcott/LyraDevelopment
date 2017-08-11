@@ -30,13 +30,10 @@ require_once(dirname(__DIR__) . "/php/partials/head-utils.php");
 		</div>
 		<main>
 			<div class="container-fluid">
-				<div class="row">
-					<!-- <section class="splash">
+				<div class="row no-top-margin">
+					<div class="blue-background">
 
-						<div class="center">
-							<h1 class="asap large-white">Lyra Development Solutions</h1>
-						</div>
-					</section> -->
+					</div>
 				</div>
 			</div>
 

@@ -13,10 +13,10 @@
 
 			<div class="collapse navbar-collapse" id="nav-collapse">
 				<ul class="asap nav navbar-nav navbar-right">
-					<li><a href="/about/">About Us</a></li>
-					<li><a href="/services/">Services</a></li>
-					<li><a href="/blog/">Blog</a></li>
-					<li><a href="/contact/">Contact</a></li>
+					<li><a href="/about/">ABOUT US</a></li>
+					<li><a href="/services/">SERVICES</a></li>
+					<li><a href="/blog/">BLOG</a></li>
+					<li><a href="/contact/">CONTACT</a></li>
 				</ul>
 			</div>
 		</div>
