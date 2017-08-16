@@ -8,7 +8,9 @@
 					<span class="icon-bar middle-bar"></span>
 					<span class="icon-bar bottom-bar"></span>
 				</button>
-				<a href="/"><img src="<?php echo $PREFIX; ?>images/lyra-standalone-logo.svg" alt="Lyra Development" class="home-logo"/></a>
+				<div class="nav-logo">
+					<a href="/"><img src="<?php echo $PREFIX; ?>images/lyra-standalone-logo.svg" alt="Lyra Development" class="home-logo"/></a>
+				</div>
 			</div>
 
 			<div class="collapse navbar-collapse" id="nav-collapse">
