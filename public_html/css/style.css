@@ -191,6 +191,14 @@ button styles
 navbar styles
 **********************************/
 
+nav.navbar {
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
 .navbar-default {
 	margin-bottom: 5rem;
 	/*padding: 0 3rem 0 3rem;*/
@@ -201,6 +209,18 @@ navbar styles
 	line-height: 5rem;
 	font-family: 'Poppins', sans-serif;
   /*box-shadow: 0 0 10px rgba(0,0,0,0.6);*/
+}
+
+.navbar-inverse {
+	margin-bottom: 5rem;
+	/*padding: 0 3rem 0 3rem;*/
+	background: white;
+	border-radius: 0;
+	border: none;
+	height: auto;
+	line-height: 5rem;
+	font-family: 'Poppins', sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
 }
 
 .navbar-toggle {
@@ -234,6 +254,12 @@ navbar styles
 }
 .navbar-toggle.collapsed .bottom-bar {
 	transform: rotate(0);
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	font-family: 'Nunito Sans', sans-serif;
+	color: black;
+	font-size: 20px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -277,7 +303,7 @@ navbar styles
 	margin: 10px 0 10px 20px;
 }
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 769px)
 {
 	.navbar-collapse {
 		background: white;

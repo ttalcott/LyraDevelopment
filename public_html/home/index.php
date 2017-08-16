@@ -9,7 +9,7 @@ $PAGE_TITLE = "Lyra Development Solutions | Software Development in Albuquerque,
 //load HTML head tag
 require_once(dirname(__DIR__) . "/php/partials/head-utils.php");
 ?>
-<body class="sfooter">
+<body class="sfooter splash-page">
 	<div class="sfooter-content">
 
 		<div class="splash">
