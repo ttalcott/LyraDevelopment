@@ -10,10 +10,11 @@ $PAGE_TITLE = "Lyra Development Solutions | Software Development in Albuquerque,
 require_once(dirname(__DIR__) . "/php/partials/head-utils.php");
 ?>
 <body class="sfooter splash-page">
+
+		<?php require_once($PREFIX . "php/partials/header.php"); ?>
 	<div class="sfooter-content">
 
 		<div class="splash">
-			<?php require_once($PREFIX . "php/partials/header.php"); ?>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="home-title">

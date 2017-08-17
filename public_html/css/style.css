@@ -107,6 +107,14 @@ h1 {
 .no-top-margin {
 	margin-top: 0;
 }
+
+@media only screen and (max-width: 768px) {
+	.zero-padding {
+		padding: 0;
+	}
+}
+
+
 /**********************************
 button styles
 **********************************/
@@ -191,6 +199,15 @@ button styles
 navbar styles
 **********************************/
 
+@media only screen and (max-width: 768px) {
+	.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+
+
 nav.navbar {
 	-webkit-transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
@@ -201,26 +218,30 @@ nav.navbar {
 
 .navbar-default {
 	margin-bottom: 5rem;
-	/*padding: 0 3rem 0 3rem;*/
 	background: transparent;
 	border-radius: 0;
 	border: none;
 	height: auto;
-	line-height: 5rem;
 	font-family: 'Poppins', sans-serif;
-  /*box-shadow: 0 0 10px rgba(0,0,0,0.6);*/
 }
 
 .navbar-inverse {
 	margin-bottom: 5rem;
-	/*padding: 0 3rem 0 3rem;*/
 	background: white;
 	border-radius: 0;
 	border: none;
-	height: auto;
 	line-height: 5rem;
 	font-family: 'Poppins', sans-serif;
-  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+.navbar-inverse .home-logo {
+	height: 110px;
+	margin: 0;
+}
+
+.navbar-inverse .container-fluid {
+	padding-left: 0;
 }
 
 .navbar-toggle {
@@ -256,6 +277,14 @@ nav.navbar {
 	transform: rotate(0);
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #ffcb00;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: #ffcb00;
+}
+
 .navbar-inverse .navbar-nav>li>a {
 	font-family: 'Nunito Sans', sans-serif;
 	color: black;
@@ -268,30 +297,46 @@ nav.navbar {
 	font-size: 20px;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
-	color: rgba(250, 175, 76, 1.0);
-}
 
 @media only screen and (min-width: 768px) {
-	.navbar-default .navbar-nav>li>a:after {
-		content: '';
-		display: block;
-		margin: auto;
-		height: 2px;
-		width: 0px;
-		background: transparent;
-		transition: width .5s ease, background-color .5s ease;
+	.navbar-default .navbar-nav>li>a:hover {
+	  color: #ffcb00;
+		transition:width 0.5s ease;
+	}
+
+	/*.navbar-default .navbar-nav>li>a:after {
+	  position: absolute;
+	  content: '';
+	  top:0;
+	  left: 0;
+	  width: 0;
+	  height: 100%;
+	  background-color: white;
+	  transform-origin:left;
+	  transition:width 0.5s ease;
+	  z-index:-1;
+	}
+
+	.navbar-default .navbar-nav>li>a:hover:after {
+	  width: 100%;
 	}
 
 	.navbar-default .navbar-nav>li>a:hover:after {
 		width: 100%;
 		background: white;
-	}
+	}*/
 
 	.navbar-default .navbar-nav>li>a {
-		padding-top: 4rem;
+		padding: 25px 30px;
+		margin-top: 25px;
 	}
+}
 
+@media only screen and (min-width: 768px) {
+	.navbar-inverse .navbar-nav>li>a {
+		padding: 25px 30px;
+		margin-top: 25px;
+	}
 }
 
 .logo-small {
@@ -314,7 +359,6 @@ nav.navbar {
 		color: black;
 	}
 }
-
 
 /**********************************
 home specific styles
@@ -359,7 +403,6 @@ home specific styles
 	}
 }
 
-
 .catchy {
 	margin: 15rem 0 0 0;
 	color: white;
@@ -371,22 +414,6 @@ home specific styles
 		padding: 0;
 		color: white;
 	}
-}
-
-.home-gold {
-	color: rgba(250, 175, 58, 1.0);
-	font-size: 70px;
-	font-weight: bold;
-}
-
-.catchy .welcome-text {
-	font-size: 65px;
-}
-
-.intro-text {
-	margin: 13rem 0 0 0;
-	color: white;
-	font-size: 35px;
 }
 
 .home-title {

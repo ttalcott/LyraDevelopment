@@ -1,6 +1,6 @@
-<header class="">
+<header class="nav">
 	<nav class="navbar navbar-fixed-top">
-		<div class="container-fluid">
+		<div class="container-fluid zero-padding">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
@@ -14,7 +14,7 @@
 			</div>
 
 			<div class="collapse navbar-collapse" id="nav-collapse">
-				<ul class="asap nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav navbar-right">
 					<li><a href="/about/">ABOUT US</a></li>
 					<li><a href="/services/">SERVICES</a></li>
 					<li><a href="/blog/">BLOG</a></li>
