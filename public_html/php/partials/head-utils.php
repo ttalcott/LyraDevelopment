@@ -42,7 +42,8 @@ $PREFIX = str_repeat("../", $DEPTH_DIFFERENCE);
 		<!-- jQuery (required for Bootstap's JS plugins) -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-
+		<!-- three.js -->
+		<script src="https://cdn.jsdelivr.net/threejs/0.85.2/three.js"></script>
 		<!-- custom js -->
 		<script type="text/javascript" src="<?php echo $PREFIX ?>js/custom-javascript.js"></script>
 

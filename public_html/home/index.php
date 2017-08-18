@@ -14,7 +14,9 @@ require_once(dirname(__DIR__) . "/php/partials/head-utils.php");
 		<?php require_once($PREFIX . "php/partials/header.php"); ?>
 	<div class="sfooter-content">
 
-		<div class="splash">
+		<div class="splash" id="container">
+			<div class="" id="overlay">
+			</div>
 			<div class="container-fluid">
 				<div class="row">
 					<div class="home-title">
@@ -40,4 +42,5 @@ require_once(dirname(__DIR__) . "/php/partials/head-utils.php");
 
 		</main>
 	</div>
+	<script src="<?php echo $PREFIX ?>js/animation.js"></script>
 </body>

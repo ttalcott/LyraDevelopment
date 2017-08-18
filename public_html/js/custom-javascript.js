@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 			if($(window).scrollTop() > 75) {
 				$('.navbar').addClass('navbar-inverse').removeClass('navbar-default');
-				$('.nav-logo img').attr('src','/images/header-logo.svg');
+				$('.nav-logo img').attr('src','/images/lyra-logo-png.png');
 			}
 
 			/* when user scrolls back up, reset navbar*/
