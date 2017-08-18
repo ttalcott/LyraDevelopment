@@ -14,8 +14,9 @@ require_once(dirname(__DIR__) . "/php/partials/head-utils.php");
 		<?php require_once($PREFIX . "php/partials/header.php"); ?>
 	<div class="sfooter-content">
 
-		<div class="splash" id="container">
+		<div class="" id="container">
 			<div class="" id="overlay">
+
 			</div>
 			<div class="container-fluid">
 				<div class="row">
@@ -31,11 +32,12 @@ require_once(dirname(__DIR__) . "/php/partials/head-utils.php");
 				</div>
 			</div>
 		</div>
+
 		<main>
 			<div class="container-fluid">
 				<div class="row no-top-margin">
 					<div class="blue-background">
-
+						<h1 CLASS="large-white no-top-margin heading1">WHAT WE DO</h1>
 					</div>
 				</div>
 			</div>

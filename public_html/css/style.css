@@ -114,6 +114,9 @@ h1 {
 	}
 }
 
+.heading1 {
+	margin: 0 auto;
+}
 
 /**********************************
 button styles
@@ -387,12 +390,10 @@ home specific styles
 	width: 100%;
 	background: black;
 }
-/*
+
 .splash {
-	background: url("../images/splash-background.svg") no-repeat center center fixed;
-	background-size: cover;
-	min-height: 95vh;
-}*/
+	position: fixed;
+}
 
 .rubik {
 	font-family: 'Rubik', sans-serif;
@@ -444,7 +445,10 @@ home specific styles
 
 .blue-background {
 	background-color: rgb(48, 99, 142);
-	min-height: 30vh;
+	min-height: 20vh;
+	display: flex;
+	align-items: center;
+	align-content: center;
 }
 
 #container {
@@ -462,9 +466,8 @@ canvas, #overlay {
 }
 
 #overlay {
-    background: url('../images/trees.png') center;
+    background: url('../images/trees.png') no-repeat center center;
     background-size: cover;
-    z-index: 1000;
 }
 
 /**********************************

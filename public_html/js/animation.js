@@ -1,14 +1,14 @@
 // author: Kai Garrott <kai@lyradevelopment.com>
 
 var renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(window.innerWidth, window.innerHeight*.95);
 document.getElementById('container').insertBefore(renderer.domElement, document.getElementById('overlay'));
 
 var scene = new THREE.Scene();
 var lightingFinished = false;
 
 var fov = 75;
-var aspect = window.innerWidth / window.innerHeight;
+var aspect = window.innerWidth / window.innerHeight*.95;
 var nearClippingPlane = 0.1;
 var farClippingPlane = 5000;
 var camera = new THREE.PerspectiveCamera( fov, aspect, nearClippingPlane, farClippingPlane );
@@ -49,9 +49,9 @@ scene.add( particleSystem );
 window.addEventListener( 'resize', onWindowResize, false );
 
 function onWindowResize() {
-    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.aspect = window.innerWidth / window.innerHeight*.95;
     camera.updateProjectionMatrix();
-    renderer.setSize( window.innerWidth, window.innerHeight );
+    renderer.setSize( window.innerWidth, window.innerHeight*.95 );
 }
 
 var backdrop;
