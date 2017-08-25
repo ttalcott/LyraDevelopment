@@ -1,14 +1,14 @@
 // author: Kai Garrott <kai@lyradevelopment.com>
 
 var renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerHeight*.95);
+renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('container').insertBefore(renderer.domElement, document.getElementById('overlay'));
 
 var scene = new THREE.Scene();
 var lightingFinished = false;
 
 var fov = 75;
-var aspect = window.innerWidth / window.innerHeight*.95;
+var aspect = window.innerWidth / window.innerHeight;
 var nearClippingPlane = 0.1;
 var farClippingPlane = 5000;
 var camera = new THREE.PerspectiveCamera( fov, aspect, nearClippingPlane, farClippingPlane );
@@ -49,9 +49,9 @@ scene.add( particleSystem );
 window.addEventListener( 'resize', onWindowResize, false );
 
 function onWindowResize() {
-    camera.aspect = window.innerWidth / window.innerHeight*.95;
+    camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
-    renderer.setSize( window.innerWidth, window.innerHeight*.95 );
+    renderer.setSize( window.innerWidth, window.innerHeight);
 }
 
 var backdrop;
@@ -75,7 +75,7 @@ function animate() {
         for(var i = 0; i < vecs.length; i ++) {
             vecs[i] *= 1.1;
         }
-        yRotationSpeed *= .63;
+        yRotationSpeed *= 0.63;
         geometry.attributes.position.needsUpdate = true;
     }
 
@@ -136,7 +136,7 @@ function animate() {
     }
 
     if(camera.position.z < 950 && camera.position.z > 800 && approachSpeed > 1) {
-        approachSpeed *= .9;
+        approachSpeed *= 0.9;
     }
 
     renderer.render(scene, camera);

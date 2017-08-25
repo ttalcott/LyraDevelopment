@@ -4,7 +4,7 @@
 $CURRENT_DIR = __DIR__;
 
 //set page name
-$PAGE_TITLE = "Lyra Development Solutions | Software Development in Albuquerque, New Mexico";
+$PAGE_TITLE = "Lyra Development | Software Development in Albuquerque, New Mexico";
 
 //load HTML head tag
 require_once(dirname(__DIR__) . "/php/partials/head-utils.php");
